@@ -30,11 +30,11 @@ export default function Header() {
     const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
 
     return (
-        <Disclosure as="nav" className="bg-gray-800  ">
+        <Disclosure as="nav" className="bg-gray-800 fixed w11 ">
             {({ open }) => (
                 <>
                     <div className="mx-auto max-w-7xl px-2 sm:px-6  lg:px-6 m-0 ">
-                        <div className="relative flex h-16 items-center justify-between">
+                        <div className="relative flex h-16 items-center justify-between ">
                             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                                 {/* Mobile menu button*/}
                                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -87,14 +87,17 @@ export default function Header() {
                                     <BellIcon className="h-6 w-6" aria-hidden="true" />
                                 </button>
 
-                                {/* Profile dropdown */}
-                                {/* {
+                                {
                                     isAuthenticated ? (
-                                        <Button type="Login" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>Logout</Button>
+                                        <button type="login" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>Logout</button>
                                     ) :
                                         (
-                                            <Button type="Login" onClick={() => loginWithRedirect()}>Login</Button>
-                                        )} */}
+                                            <button type="Login" onClick={() => loginWithRedirect()}>Login</button>
+                                        )}
+
+
+                                {/* Profile dropdown */}
+
                                 <Menu as="div" className="relative ml-5">
                                     <div>
                                         <Menu.Button className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
@@ -150,6 +153,9 @@ export default function Header() {
                                         </Menu.Items>
                                     </Transition>
                                 </Menu>
+
+
+                                {/* Profile dropdown */}
                             </div>
 
                         </div>

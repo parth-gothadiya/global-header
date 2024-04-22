@@ -1,17 +1,26 @@
-.big1:hover
-{
+.big1:hover {
     transform: scale(1.1);
     letter-spacing: 1px;
 }
-.big1
-{
+
+.big1 {
     transition: 0.2s;
     letter-spacing: 1px;
 }
-.spc
-{
+
+.spc {
     display: flex;
     justify-content: space-between !important;
     align-items: center;
     width: 100vw;
+}
+
+.position1 {
+    position: sticky !important;
+    z-index: 1 ;
+}
+.w11
+{
+    width: 100vw;
+    z-index: 1;
 }
