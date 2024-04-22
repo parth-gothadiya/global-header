@@ -2,10 +2,11 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '../Asseat/logo.png'
-import user1 from '../Asseat/user.png'
+import user1 from '../Asseat/user2.png'
 import './header.css'
 import { useAuth0 } from '@auth0/auth0-react'
 import { Button } from 'bootstrap'
+import { Link } from 'react-router-dom'
 
 
 
@@ -14,11 +15,11 @@ import { Button } from 'bootstrap'
 
 
 const navigation = [
-    { name: 'Dashboard', href: '#', current: true },
-    { name: 'Category', href: '#', current: false },
-    { name: 'Blog', href: '#', current: false },
-    { name: 'Contact ', href: '#', current: false },
-    { name: 'About', href: '#', current: false },
+    { name: 'Home', href: '/', current: false },
+    { name: 'Category', href: '/Category', current: false },
+    { name: 'Feature', href: '/Feature', current: false },
+    { name: 'Contact ', href: '/Contact' , current: false },
+    { name: 'About', href: '/About', current: false },
 ]
 
 function classNames(...classes) {
@@ -30,12 +31,12 @@ export default function Header() {
     const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
 
     return (
-        <Disclosure as="nav" className="bg-gray-800 fixed w11 ">
+        <Disclosure as="nav" className="bg-gray-800 fixed w11 maar ">
             {({ open }) => (
                 <>
                     <div className="mx-auto max-w-7xl px-2 sm:px-6  lg:px-6 m-0 ">
                         <div className="relative flex h-16 items-center justify-between ">
-                            <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                            <div className="absolute inset-y-0 left-0 flex items-center sm:hidden sticky">
                                 {/* Mobile menu button*/}
                                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                                     <span className="absolute -inset-0.5" />
