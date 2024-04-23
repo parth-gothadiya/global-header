@@ -26,25 +26,33 @@
     z-index: 1;
 
 }
+.mm11
+{
+    /* margin:auto; */
+    margin-right: 10px;
+    
+}
 
 .button {
-    border-radius: 4px;
-    background-color: #000000;
+    border-radius: 6px;
+    /* background-color: #000000; */
+    /* background-color: #1F2937; */
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 15px;
-    padding: 7px;
-    width: 90px;
+    font-size: 14px;
+    padding: 8px 10px !important;
+    width: 70px;
     transition: all 0.4s;
     cursor: pointer;
-    /* margin: 5px; */
+    /* margin: 5px;  */
     font-family: Josefin Sans;
     font-weight: 700;
     letter-spacing: 1px;
 }
-button:hover{
+.button:hover{
     color: orange;
+    background-color: #111827;
 
 }
 .button span {
@@ -59,12 +67,12 @@ button:hover{
     position: absolute;
     opacity: 0;
     top: 0;
-    right: -20px;
+    /* right: -10px; */
     transition: 0.5s;
 }
 
 .button:hover span {
-    padding-right: 25px;
+    padding-right: 15px;
 }
 
 .button:hover span:after {

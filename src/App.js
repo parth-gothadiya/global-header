@@ -6,6 +6,7 @@ import Contact from './Component/Contact';
 import Feature from './Component/Feature';
 import Category from './Component/Category';
 import About from './Component/About';
+import Proflie from './Component/Proflie/Proflie';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -18,6 +19,10 @@ function App() {
       <Route path='/Category' element={<Category/>}/>
       <Route path='/Feature' element={<Feature/>}/>
       <Route path='/About' element={<About/>}/>
+
+      {/*----------------- Proflie -----------------*/}
+      <Route path='/Proflie' element={<Proflie/>}/>
+
     </Routes>
 
   

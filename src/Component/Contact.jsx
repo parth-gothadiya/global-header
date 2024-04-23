@@ -1,20 +1,16 @@
 import React from 'react'
 import Header from './Header';
 import Footer from './footer';
+import { useAuth0 } from "@auth0/auth0-react";
 
 function Contact() {
-    const navigation = [
-        { name: 'Dashboard', href: '#', current: false },
-        { name: 'Category', href: '#', current: false },
-        { name: 'Blog', href: '#', current: false },
-        { name: 'Contact ', href: '/Contact' , current: true },
-        { name: 'About', href: '#', current: false },
-    ]
-    
+    const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
+
+
     return (
         <div>
 
-            <Header/>
+            <Header />
 
             <section class="text-gray-600 body-font relative">
                 <div class="container px-5 py-24 mx-auto">
@@ -27,13 +23,15 @@ function Contact() {
                             <div class="p-2 w-1/2">
                                 <div class="relative">
                                     <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
-                                    <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+                                    <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                                 </div>
                             </div>
                             <div class="p-2 w-1/2">
                                 <div class="relative">
+                                    {isAuthenticated &&
+                                        <p>{user.name}</p>}
                                     <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-                                    <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+                                    <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                                 </div>
                             </div>
                             <div class="p-2 w-full">
@@ -48,7 +46,7 @@ function Contact() {
                             <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
                                 <a class="text-yellow-500">example@email.com</a>
                                 <p class="leading-normal my-5">49 Smith St.
-                                    <br/>Saint Cloud, MN 56301
+                                    <br />Saint Cloud, MN 56301
                                 </p>
                                 <span class="inline-flex">
                                     <a class="text-gray-500">
@@ -78,7 +76,7 @@ function Contact() {
                     </div>
                 </div>
             </section>
-            <Footer/>
+            <Footer />
         </div>
     )
 }
