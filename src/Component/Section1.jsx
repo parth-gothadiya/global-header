@@ -1,6 +1,6 @@
 import React from 'react';
 import './style1.css';
-import { ProgressBar, ThreeDots } from 'react-loader-spinner'
+// import { ProgressBar, ThreeDots } from 'react-loader-spinner'
 
 function Section1() {
     return (
