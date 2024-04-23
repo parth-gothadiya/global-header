@@ -5,6 +5,7 @@ import logo from '../Asseat/logo.png'
 function Footer() {
     return (
         <div>
+                <hr style={{height:'1px',borderWidth:'0',color:'Black',backgroundColor:'gray', margin:'auto', width:"100%"}}></hr>
 
             <footer class="text-gray-600 body-font">
                 <div class="container px-5 py-24 mx-auto">
@@ -75,7 +76,8 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                <div class="bg-gray-100">
+                <hr style={{height:'0.5px',borderWidth:'0',color:'gray',backgroundColor:'Black',width:'90%' , margin:'auto'}}></hr>
+                <div class="bg-inherit">
                     <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
                         <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
                             {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-yellow-500 rounded-full" viewBox="0 0 24 24">

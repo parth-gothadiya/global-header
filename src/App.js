@@ -7,6 +7,7 @@ import Feature from './Component/Feature';
 import Category from './Component/Category';
 import About from './Component/About';
 import Proflie from './Component/Proflie/Proflie';
+import Page404 from './Component/Page404';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -19,6 +20,8 @@ function App() {
       <Route path='/Category' element={<Category/>}/>
       <Route path='/Feature' element={<Feature/>}/>
       <Route path='/About' element={<About/>}/>
+
+      <Route path='/Page404' element={<Page404/>}/>
 
       {/*----------------- Proflie -----------------*/}
       <Route path='/Proflie' element={<Proflie/>}/>

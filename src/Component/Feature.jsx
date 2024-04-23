@@ -68,7 +68,7 @@ function Feature() {
                 </div>
             </section>
             <Footer/>
-            <Theam/>
+<Theam/>
         </div>
     )
 }

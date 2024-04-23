@@ -1,14 +1,20 @@
 import React from 'react';
 import './style1.css';
+import { ProgressBar, ThreeDots } from 'react-loader-spinner'
 
 function Section1() {
     return (
         <div>
 
             <section class="text-gray-600 body-font  bg-theam">
-          
+
+
+              
+
+
+
                 <div class="container px-5 py-24 mx-auto">
-                    
+
                     <div class="flex flex-wrap -m-4">
                         <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
                             <a class="block relative h-48 rounded overflow-hidden">
