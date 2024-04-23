@@ -34,11 +34,11 @@
     color: #FFFFFF;
     text-align: center;
     font-size: 15px;
-    padding: 6px;
+    padding: 7px;
     width: 90px;
     transition: all 0.4s;
     cursor: pointer;
-    margin: 5px;
+    /* margin: 5px; */
     font-family: Josefin Sans;
     font-weight: 700;
     letter-spacing: 1px;
