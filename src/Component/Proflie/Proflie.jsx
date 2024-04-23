@@ -19,7 +19,7 @@ import Header from '../Header'
 
 export default function Proflie() {
     return (<>
-            <Header/>
+        <Header />
         <form className='mx-20 mb-20'>
             <div className="space-y-12 contents mt-20">
                 <div className="border-b border-gray-900/10 pb-12">
@@ -49,6 +49,21 @@ export default function Proflie() {
                         </div>
 
                         <div className="col-span-full">
+                            <label htmlFor="photo" className="block text-sm font-medium leading-6 text-gray-900">
+                                Photo
+                            </label>
+                            <div className="mt-2 flex items-center gap-x-3">
+                                <UserCircleIcon className="h-12 w-12 text-gray-300" aria-hidden="true" />
+                                <button
+                                    type="button"
+                                    className="rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                                >
+                                    Change
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div className="col-span-full">
                             <label htmlFor="about" className="block text-sm font-medium leading-6 text-gray-900">
                                 About
                             </label>
@@ -64,22 +79,8 @@ export default function Proflie() {
                             <p className="mt-3 text-sm leading-6 text-gray-600">Write a few sentences about yourself.</p>
                         </div>
 
-                        <div className="col-span-full">
-                            <label htmlFor="photo" className="block text-sm font-medium leading-6 text-gray-900">
-                                Photo
-                            </label>
-                            <div className="mt-2 flex items-center gap-x-3">
-                                <UserCircleIcon className="h-12 w-12 text-gray-300" aria-hidden="true" />
-                                <button
-                                    type="button"
-                                    className="rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-                                >
-                                    Change
-                                </button>
-                            </div>
-                        </div>
 
-                        <div className="col-span-full">
+                        {/* <div className="col-span-full">
                             <label htmlFor="cover-photo" className="block text-sm font-medium leading-6 text-gray-900">
                                 Cover photo
                             </label>
@@ -99,7 +100,7 @@ export default function Proflie() {
                                     <p className="text-xs leading-5 text-gray-600">PNG, JPG, GIF up to 10MB</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
@@ -166,7 +167,13 @@ export default function Proflie() {
                                 >
                                     <option>United States</option>
                                     <option>Canada</option>
-                                    <option>Mexico</option>
+                                    <option selected>India</option>
+                                    <option>Africa</option>
+                                    <option>Indonesia</option>
+                                    <option>Germany</option>
+                                    <option>United Kingdom</option>
+                                    <option>New Zealand</option>
+                                    <option>Japan</option>
                                 </select>
                             </div>
                         </div>
@@ -233,7 +240,7 @@ export default function Proflie() {
                     </div>
                 </div>
 
-                
+
             </div>
 
             <div className="mt-6 flex items-center justify-end gap-x-6">
@@ -242,14 +249,14 @@ export default function Proflie() {
                 </button>
                 <button
                     type="submit"
-                    className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                     Save
                 </button>
             </div>
         </form>
-            <Footer/>
-            <Theam/>
+        <Footer />
+        <Theam />
     </>
 
     )
