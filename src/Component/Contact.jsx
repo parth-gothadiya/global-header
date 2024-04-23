@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header';
 import Footer from './footer';
 import { useAuth0 } from "@auth0/auth0-react";
+import Theam from './Theam';
 
 function Contact() {
     const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
@@ -77,6 +78,7 @@ function Contact() {
                 </div>
             </section>
             <Footer />
+            <Theam/>
         </div>
     )
 }

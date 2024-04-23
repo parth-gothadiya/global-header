@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header';
 import Footer from './footer';
+import Theam from './Theam';
 
 function Feature() {
     return (
@@ -67,6 +68,7 @@ function Feature() {
                 </div>
             </section>
             <Footer/>
+            <Theam/>
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header';
 import Footer from './footer';
+import Theam from './Theam';
 
 function Category() {
     return (
@@ -80,6 +81,7 @@ function Category() {
                 </div>
             </section>
             <Footer/>
+            <Theam/>
         </div>
     )
 }
