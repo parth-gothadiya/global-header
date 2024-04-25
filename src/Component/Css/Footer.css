@@ -1,0 +1,15 @@
+@media screen and (max-width:430px){
+    #fp1{
+        display: none;
+    }
+}
+
+@media screen and (max-width:430px){
+    #fp2{
+        display: none;
+    }
+}
+.font1
+{
+    font-family: Josefin Sans;
+}

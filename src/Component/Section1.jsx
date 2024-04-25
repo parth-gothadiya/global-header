@@ -1,5 +1,5 @@
 import React from 'react';
-import './style1.css';
+import './Css/style1.css';
 // import { ProgressBar, ThreeDots } from 'react-loader-spinner'
 
 function Section1() {
@@ -13,7 +13,7 @@ function Section1() {
 
 
 
-                <div class="container px-5 py-24 mx-auto">
+                <div class="container px-5 py-24 p40 mx-auto">
 
                     <div class="flex flex-wrap -m-4">
                         <div class="lg:w-1/4 md:w-1/2 p-4 w-full">

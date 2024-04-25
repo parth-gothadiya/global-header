@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../Asseat/logo.png'
+import './Css/Footer.css'
 
 
 function Footer() {
@@ -7,10 +8,10 @@ function Footer() {
         <div>
                 <hr style={{height:'1px',borderWidth:'0',color:'Black',backgroundColor:'gray', margin:'auto', width:"100%"}}></hr>
 
-            <footer class="text-gray-600 body-font">
+            <footer class="text-gray-600 body-font font1">
                 <div class="container px-5 pt-24 pb-5 mx-auto">
-                    <div class="flex flex-wrap md:text-left text-center order-first">
-                        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <div class="flex flex-wrap md:text-left text-center order-first" >
+                        <div class="lg:w-1/4 md:w-1/2 w-full px-4 "id="fp1">
                             <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
                             <nav class="list-none mb-10">
                                 <li>
@@ -27,7 +28,7 @@ function Footer() {
                                 </li>
                             </nav>
                         </div>
-                        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                        <div class="lg:w-1/4 md:w-1/2 w-full px-4" id="fp2">
                             <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
                             <nav class="list-none mb-10">
                                 <li>
@@ -44,8 +45,8 @@ function Footer() {
                                 </li>
                             </nav>
                         </div>
-                        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                        <div class="lg:w-1/4 md:w-1/2 w-full px-4" id="fp3">
+                            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3" >CATEGORIES</h2>
                             <nav class="list-none mb-10">
                                 <li>
                                     <a class="text-gray-600 hover:text-gray-800">First Link</a>

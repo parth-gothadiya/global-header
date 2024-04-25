@@ -3,9 +3,8 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "../Asseat/logo.png";
 import user1 from "../Asseat/user2.png";
-import "./header.css";
+import "./Css/header.css";
 import { useAuth0 } from "@auth0/auth0-react";
-import { Button } from "bootstrap";
 import { Link } from "react-router-dom";
 
 const navigation = [
@@ -32,7 +31,7 @@ export default function Header() {
 
 
     return (
-        <Disclosure as="nav" className="bg-gray-800 fixed w11 maar ">
+        <Disclosure as="nav" className="bg-gray-800  w11 maar fixed">
             {({ open }) => (
                 <>
                     <div className="mx-auto max-w-7xl px-2 sm:px-6  lg:px-6 m-0 ">
