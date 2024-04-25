@@ -11,7 +11,7 @@ function Footer() {
             <footer class="text-gray-600 body-font font1">
                 <div class="container px-5 pt-24 pb-5 mx-auto">
                     <div class="flex flex-wrap md:text-left text-center order-first" >
-                        <div class="lg:w-1/4 md:w-1/2 w-full px-4 "id="fp1">
+                        <div class="lg:w-1/4 md:w-1/2 w-full px-4 font11"id="fp1">
                             <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
                             <nav class="list-none mb-10">
                                 <li>
