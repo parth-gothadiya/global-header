@@ -1,5 +1,5 @@
 import React from 'react'
-import { ProgressBar, RotatingLines, ThreeDots } from 'react-loader-spinner';
+import { ProgressBar,ThreeDots } from 'react-loader-spinner';
 
 function Loader() {
     return (

@@ -1,11 +1,11 @@
 @media screen and (max-width:430px){
-    #fp1{
+    #fp2{
         display: none;
     }
 }
 
-@media screen and (max-width:430px){
-    #fp2{
+@media screen and (max-width:1020px){
+    #fp3{
         display: none;
     }
 }
