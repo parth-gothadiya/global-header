@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useState } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, BellIcon,XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "../Asseat/logo.png";
 import user1 from "../Asseat/user2.png";
 import "./Css/header.css";
@@ -172,8 +172,8 @@ export default function Header() {
                                             {/* <BellIcon className="h-6 w-6" aria-hidden="true" /> */}
                                             <Menu as="div" className="relative inline-block text-left">
                                                 <div>
-                                                    <Menu.Button className="ms-3 relative rounded-full  bg-gray-800 p-1 text-white hover:text-amber-500 focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                                                        <BellIcon className="h-6 w-6" aria-hidden="true" />
+                                                    <Menu.Button className="ms-0 relative rounded-full  bg-gray-800 p-1 text-white hover:text-amber-500 focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                                                        <BellIcon className="h-6 w-6 rounded-full" aria-hidden="true" />
                                                         {/* <ChevronDownIcon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" /> */}
                                                     </Menu.Button>
                                                 </div>
@@ -323,7 +323,7 @@ export default function Header() {
                                             : "text-gray-300 hover:bg-gray-700 hover:text-white",
                                         "block rounded-md px-3 py-2 text-base font-medium"
                                     )}
-                                    aria-current={item.current ? "page" : undefined}
+                                    aria-current={item.current ? "page" :undefined}
                                 >
                                     {item.name}
                                 </Disclosure.Button>
