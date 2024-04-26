@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from './Header';
 import Footer from './footer';
 import { useAuth0 } from "@auth0/auth0-react";
 import Theam from './Theam';
+import Loader from './Loader';
 
 function Contact() {
     const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
-
 
     return (
         <div>

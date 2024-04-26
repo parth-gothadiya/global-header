@@ -7,6 +7,7 @@ import "./Css/header.css";
 import { useAuth0 } from "@auth0/auth0-react";
 import { Button } from "bootstrap";
 import { Link } from "react-router-dom";
+import Loader from "./Loader";
 
 const navigation = [
     { name: "Home", href: "/", current: true },
@@ -25,6 +26,7 @@ export default function Header() {
     const [userData, setUserData] = useState(JSON.parse(sessionStorage.getItem("user")))
     const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
     useEffect(() => {
+        
         if (isAuthenticated) {
             sessionStorage.setItem("user", JSON.stringify(user));
         }
