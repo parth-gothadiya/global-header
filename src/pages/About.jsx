@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from './Header';
-import Footer from './footer';
+import Header from '../Component/Header';
+import Footer from '../Component/footer';
 
 function About() {
     return (
