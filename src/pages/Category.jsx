@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from './Header';
-import Footer from './footer';
-import Theam from './Theam';
+import Header from '../Component/Header';
+import Footer from '../Component/footer';
+import Theam from '../Component/Theam';
 
 function Category() {
     return (

@@ -1,9 +1,9 @@
 import React from 'react'
-import Header from './Header';
-import Footer from './footer';
-import Section1 from './Section1';
-import Theam from './Theam';
-import Section2 from './Section2';
+import Header from '../Component/Header';
+import Footer from '../Component/footer';
+import Section1 from '../Component/Section1';
+import Theam from '../Component/Theam';
+import Section2 from '../Component/Section2';
 
 function Home() {
   return (
