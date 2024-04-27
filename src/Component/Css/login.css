@@ -1,0 +1,13 @@
+.sizer
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center !important; 
+    align-items: center !important;
+    /* font-family: Josefin Sans; */
+}
+.sizer1
+{
+    padding: 60px;
+}

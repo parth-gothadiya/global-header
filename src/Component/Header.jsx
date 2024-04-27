@@ -1,13 +1,14 @@
 import { Fragment, useEffect, useState } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, BellIcon,XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "../Asseat/logo.png";
 import user1 from "../Asseat/user2.png";
 import "./Css/header.css";
 import { useAuth0 } from "@auth0/auth0-react";
-import { Button } from "bootstrap";
+import { Button, Popover } from "bootstrap";
 import { Link } from "react-router-dom";
 import Loader from "./Loader";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 const navigation = [
     { name: "Home", href: "/", current: true },
@@ -26,7 +27,7 @@ export default function Header() {
     const [userData, setUserData] = useState(JSON.parse(sessionStorage.getItem("user")))
     const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
     useEffect(() => {
-        
+
         if (isAuthenticated) {
             sessionStorage.setItem("user", JSON.stringify(user));
         }
@@ -72,7 +73,7 @@ export default function Header() {
                                                 className={classNames(
                                                     item.current
                                                         ? "bg-gray-900 text-white"
-                                                        : "text-gray-300 hover:bg-dark-700 big1 hover:text-amber-500",
+                                                        : "text-gray-300 hover:bg-black big1 hover:text-amber-500",
                                                     "rounded-md px-3 py-2 text-sm font-medium"
                                                 )}
                                                 aria-current={item.current ? "page" : undefined}
@@ -325,7 +326,7 @@ export default function Header() {
                                             : "text-gray-300 hover:bg-gray-700 hover:text-white",
                                         "block rounded-md px-3 py-2 text-base font-medium"
                                     )}
-                                    aria-current={item.current ? "page" :undefined}
+                                    aria-current={item.current ? "page" : undefined}
                                 >
                                     {item.name}
                                 </Disclosure.Button>
