@@ -28,7 +28,7 @@ function Footer() {
                                 </li>
                             </nav>
                         </div>
-                        <div class="lg:w-1/4 md:w-1/2 w-full px-4" id="fp2">
+                        <div class="lg:w-1/4 md:w-1/4 w-full px-4" id="fp2">
                             <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
                             <nav class="list-none mb-10">
                                 <li>
