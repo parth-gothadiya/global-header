@@ -1,6 +1,8 @@
 import Theamdark from "../Theamdark";
 import "../Css/login.css"
 import Theam from "../Theam";
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
 import logo from "../../Asseat/Global (1).png"
 export default function Login() {
     return (
@@ -8,10 +10,10 @@ export default function Login() {
             {/* <Theamdark /> */}
             <Theam />
 
-            <div className="flex min-h-full flex-1 flex-col justify-center px-0 lg:px-0 items-center border-amber-500 rounded-md ">
+            <div className="flex min-h-full flex-1 flex-col justify-center px-0 lg:px-0 items-center border-amber-500 rounded-md h-full  border-black rounded-lg border-solid border-2">
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                     <img
-                        className="mx-auto h-10 w-auto"
+                        className="mx-auto h-14 w-auto"
                         src={logo}
                         alt="Your Company"
                     />

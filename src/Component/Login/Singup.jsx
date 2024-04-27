@@ -11,7 +11,7 @@ export default function Login() {
             <div className="flex min-h-full flex-1 flex-col justify-center px-0 lg:px-0 items-center ">
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                     <img
-                        className="mx-auto h-10 w-auto"
+                        className="mx-auto h-14 w-auto"
                         src={logo}
                         alt="Your Company"
                     />
