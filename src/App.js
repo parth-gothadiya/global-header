@@ -21,6 +21,7 @@ import {
 import { loadingStart, loadingStop } from "./redux/slices/auth.slice";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(false);
   const location = useLocation();
   const dispatch = useDispatch();
 
@@ -30,11 +31,11 @@ function App() {
   );
 
   useEffect(() => {
-    dispatch(loadingStart());
+    setIsLoading(true);
     setTimeout(() => {
-      dispatch(loadingStop());
+      setIsLoading(false);
     }, 2000);
-  }, [location.pathname, dispatch]);
+  }, [location.pathname]);
 
   useEffect(() => {
     if (!getBannerOnce()) {
@@ -49,7 +50,8 @@ function App() {
   return (
     <>
       {getBannerOnce() && bannerLoading && <Banner />}
-      {loading && <Loader />}
+      {(isLoading || loading) && <Loader />}
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Contact" element={<Contact />} />
@@ -57,7 +59,11 @@ function App() {
         <Route path="/Feature" element={<Feature />} />
         <Route path="/About" element={<About />} />
         {/*----------------- Proflie -----------------*/}
-        <Route path="/Proflie" element={<Proflie />} />
+        {(sessionStorage.getItem("user") || userData) && (
+          <>
+            <Route path="/Proflie" element={<Proflie />} />
+          </>
+        )}
 
         <Route path="*" element={<Page404 />} />
       </Routes>
